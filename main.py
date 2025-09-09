@@ -5,8 +5,8 @@ from pymongo import MongoClient
 from bson import ObjectId
 from datetime import datetime
 from dotenv import load_dotenv
-from langchain_core.documents import Document
 from langchain.schema import Document
+from langchain_core.documents import Document
 from openai import OpenAI
 from fastapi import FastAPI, HTTPException
 from fastapi import Body
