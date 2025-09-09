@@ -1,11 +1,18 @@
+# Core
 fastapi==0.111.0
 uvicorn[standard]==0.30.0
-pydantic==2.7.1         # upgrade to Pydantic v2 (needed for new langchain)
+pydantic==2.7.1
 python-dotenv==1.0.1
 pymongo==4.6.1
 numpy==1.26.4
+
+# OpenAI + LangChain
 openai==1.30.1
-langchain==0.2.11       # upgrade langchain to stable recent version
+langchain==0.2.11
 langchain-core==0.2.11
 langchain-community==0.2.10
 langchain-openai==0.1.7
+
+# Force prebuilt wheels (avoid Rust/maturin build)
+tiktoken==0.7.0
+orjson==3.10.6
