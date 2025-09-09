@@ -264,7 +264,7 @@ class QuestionRequest(BaseModel):
 # -----------------------------
 @app.get("/")
 def root():
-    return {"status": "ok", "message": "Finance QA API is running"}
+    return {"status hi": "ok", "message": "Finance QA API is running"}
 
 @app.post("/load-data/{user_id}")
 def load_data(user_id: str):
